@@ -20,7 +20,7 @@
       </div>
       <div class="col bg-primary text-white   display-5 m-3" onclick="letterD()">
         <p class=" display-3  fw-bolder">D</p>
-        <audio id="D" src="audios/alphabets/D.mp3"></audio>
+        <audio id="D" src="{% static 'audios/alphabets/D.mp3' %}"></audio>
       </div>
       <div class="col bg-info text-white   display-5 m-3" onclick="letterE()">
         <p class=" display-3  fw-bolder">E</p>
@@ -51,7 +51,7 @@
     <div class="row shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-primary text-white   display-5 m-3" onclick="letterM()">
         <p class=" display-3  fw-bolder">M</p>
-        <audio id="M" src="audios/alphabets/M.mp3"></audio>
+        <audio id="M" src="{% static 'audios/alphabets/M.mp3'%}"></audio>
       </div>
       <div class="col bg-info text-white   display-5 m-3">
         <p class=" display-3  fw-bolder">N</p>
@@ -90,7 +90,7 @@
     <div class="row shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-danger text-white   display-5 m-3" onclick="letterY()">
         <p class=" display-3  fw-bolder">Y</p>
-        <audio id="Y" src="audios/alphabets/Y.mp3"></audio>
+        <audio id="Y" src="{% static 'audios/alphabets/Y.mp3'%}"></audio>
       </div>
       <div class="col bg-danger text-white   display-5 m-3">
         <p class=" display-3  fw-bolder">Z</p>
@@ -99,6 +99,7 @@
 
   </div>
 
+
   <!-- Sounds begins here -->
   <div class="container-fluid   Lettersounds text-center">
     <h1 class="text-center  display-3"> Sounds </h1>
@@ -106,99 +107,233 @@
     <div class="d-flex justify-content-around shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-primary text-white  display-5 m-3" onclick="soundA()">
         <p>Aa</p>
-        <audio id="sA" src="audios/Lettersounds/Asound.mp3"></audio>
+        <audio id="sA" src="{% static 'audios/Lettersounds/A.mp3'%}"></audio>
       </div>
       <div class="col bg-info text-white   display-5 m-3" onclick="soundB()">
         <p>Bb</p>
-        <audio id="sB" src="audios/Lettersounds/Bsound.mp3"></audio>
+        <audio id="sB" src="{% static 'audios/Lettersounds/B.mp3' %}"></audio>
       </div>
       <div class="col bg-danger text-white   display-5 m-3" onclick="soundC()">
         <p>Cc</p>
-        <audio id="sC" src="audios/Lettersounds/Csound.mp3"></audio>
+        <audio id="sC" src="{% static 'audios/Lettersounds/C.mp3'%}"></audio>
       </div>
       <div class="col bg-primary text-white   display-5 m-3" onclick="soundD()">
         <p>Dd</p>
-        <audio id="sD" src="audios/Lettersounds/Dsound.mp3"></audio>
+        <audio id="sD" src="{% static 'audios/Lettersounds/D.mp3'%}"></audio>
       </div>
       <div class="col bg-info text-white   display-5 m-3" onclick="soundE()">
         <p>Ee</p>
-        <audio id="sE" src="audios/Lettersounds/Esound.mp3"></audio>
+        <audio id="sE" src="{% static 'audios/Lettersounds/E.mp3'%}"></audio>
       </div>
       <div class="col bg-danger text-white  display-5 m-3" onclick="soundF()">
         <p>Ff</p>
-        <audio id="sF" src="audios/Lettersounds/Fsound.mp3"></audio>
+        <audio id="sF" src="{% static 'audios/Lettersounds/F.mp3'%}"></audio>
       </div>
-      <div class="col bg-primary text-white   display-5 m-3">
+      <div class="col bg-primary text-white   display-5 m-3"  onclick="soundG()">
         <p>Gg</p>
+        <audio id="sG" src="{% static 'audios/Lettersounds/G.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundH()">
         <p>Hh</p>
+        <audio id="sH" src="{% static 'audios/Lettersounds/H.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundI()">
         <p>Ii</p>
+        <audio id="sI" src="{% static 'audios/Lettersounds/I.mp3'%}"></audio>
       </div>
-      <div class="col bg-primary text-white   display-5 m-3">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="soundJ()">
         <p>Jj</p>
+        <audio id="sJ" src="{% static 'audios/Lettersounds/J.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundK()">
         <p>Kh</p>
+        <audio id="sK" src="{% static 'audios/Lettersounds/K.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundL()">
         <p>Ll</p>
+        <audio id="sL" src="{% static 'audios/Lettersounds/L.mp3'%}"></audio>
       </div>
     </div>
     <div class="d-flex justify-content-around shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-primary text-white   display-5 m-3" onclick="soundM()">
         <p>Ml</p>
-        <audio id="sM" src="audios/Lettersounds/"></audio>
+        <audio id="sM" src="{% static 'audios/Lettersounds/M.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundN()">
         <p>Nn</p>
+        <audio id="sN" src="{% static 'audios/Lettersounds/N.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundO()">
         <p>Oo</p>
+        <audio id="sO" src="{% static 'audios/Lettersounds/O.mp3'%}"></audio>
       </div>
-      <div class="col bg-primary text-white   display-5 m-3">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="soundP()">
         <p>P</p>
+        <audio id="sP" src="{% static 'audios/Lettersounds/P.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundQ()">
         <p>Qq</p>
+        <audio id="sQ" src="{% static 'audios/Lettersounds/Q.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundR()">
         <p>Rr</p>
+        <audio id="sR" src="{% static 'audios/Lettersounds/R.mp3'%}"></audio>
       </div>
-      <div class="col bg-primary text-white   display-5 m-3">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="soundS()">
         <p>Ss</p>
+        <audio id="sS" src="{% static 'audios/Lettersounds/S.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundT()">
         <p>Tt</p>
+        <audio id="sT" src="{% static 'audios/Lettersounds/T.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundU()">
         <p>Uu</p>
+        <audio id="sU" src="{% static 'audios/Lettersounds/U.mp3'%}"></audio>
       </div>
-      <div class="col bg-primary text-white   display-5 m-3">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="soundV()">
         <p>Vv</p>
+        <audio id="sV" src="{% static 'audios/Lettersounds/V.mp3'%}"></audio>
       </div>
-      <div class="col bg-info text-white   display-5 m-3">
+      <div class="col bg-info text-white   display-5 m-3" onclick="soundW()">
         <p>Ww</p>
+        <audio id="sW" src="{% static 'audios/Lettersounds/W.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundX()">
         <p>Xx</p>
+        <audio id="sX" src="{% static 'audios/Lettersounds/X.mp3'%}"></audio>
       </div>
     </div>
     
     <div class="row shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-danger text-white   display-5 m-3" onclick="soundY()">
         <p>Yy</p>
-        <audio id="sY" src="audios/Lettersounds/Ysound.mp3"></audio>
+        <audio id="sY" src="{% static 'audios/Lettersounds/Y.mp3'%}"></audio>
       </div>
-      <div class="col bg-danger text-white   display-5 m-3">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="soundZ()">
         <p>Zz</p>
+        <audio id="sZ" src="{% static 'audios/Lettersounds/Z.mp3'%}"></audio>
+      </div>
+    </div>
+  
+    
+  <!-- Phonics -->
+  <div class="container-fluid numbers shadow p-3 mb-5 bg-body rounded">
+    <h1 class="text-center p-5 display-3">PHONICS </h1>
+    <div class="row ">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterAp()">
+        <p class=" display-3  fw-bolder">Apple Ant</p>
+        <audio id="Aa" src="{% static 'audios/phonics/Apple and ant.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterBa()">
+        <p class=" display-3  fw-bolder">Ball Bat</p>
+        <audio id="Bb" src="{% static 'audios/phonics/Ball and bat.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterCa()">
+        <p class=" display-3  fw-bolder">Cat Cup</p>
+        <audio id="Cc" src="{% static 'audios/phonics/Cat and cup.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterDa()">
+        <p class=" display-3  fw-bolder">Dog Dots</p>
+        <audio id="Dd" src="audios/phonics/Dog and Dots.mp3"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterEa()">
+        <p class=" display-3  fw-bolder">Elephant Egg</p>
+        <audio id="Ee" src="{% static 'audios/phonics/Elephant and egg.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterFa()">
+        <p class=" display-3  fw-bolder">Frog Fish</p>
+        <audio id="Ff" src="{% static 'audios/phonics/Frog and fish.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterGa()">
+        <p class=" display-3  fw-bolder">Goat Grass</p>
+        <audio id="Gg" src="{% static 'audios/phonics/Goat and grass.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterHa()">
+        <p class=" display-3  fw-bolder">Hand Hat</p>
+        <audio id="Hh" src="{% static 'audios/phonics/Hand and hat.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterIa()">
+        <p class=" display-3  fw-bolder">Insect Ink</p>
+        <audio id="Ii" src="{% static 'audios/phonics/Insect and ink.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterJa()">
+        <p class=" display-3  fw-bolder">Jar Juice</p>
+        <audio id="j" src="{% static 'audios/phonics/Jar and juice.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterKa()">
+        <p class=" display-3  fw-bolder">Kite King</p>
+        <audio id="Kk" src="{% static 'audios/phonics/Kite and king.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterLa()">
+        <p class=" display-3  fw-bolder">Lamp and leaf</p>
+        <audio id="Ll" src="{% static 'audios/phonics/Lamp and leaf.mp3' %}"></audio>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterMa()">
+        <p class=" display-3  fw-bolder">Man monkey</p>
+        <audio id="Mm" src="audios/alphabets/Man and monkey.mp3"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterNa()">
+        <p class=" display-3  fw-bolder">Nose Neck</p>
+        <audio id="Nn" src="{% static 'audios/phonics/Nose and neck.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterOa()">
+        <p class=" display-3  fw-bolder">Oar Ocean</p>
+        <audio id="Oo" src="{% static 'audios/phonics/Oar and ocean.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterPa()">
+        <p class=" display-3  fw-bolder">Parrot Plum</p>
+        <audio id="Pp" src="{% static 'audios/phonics/parrot and plum.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterQa()">
+        <p class=" display-3  fw-bolder">Queen Quail</p>
+        <audio id="Qq" src="{% static 'audios/phonics/Queen and Quail.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterRa()">
+        <p class=" display-3  fw-bolder">Rope and Rat</p>
+        <audio id="Rr" src="{% static 'audios/phonics/Rope and rat.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterSa()">
+        <p class=" display-3  fw-bolder">Sunflower Sun</p>
+        <audio id="Ss" src="{% static 'audios/phonics/Sunflower and sun.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterTa()">
+        <p class=" display-3  fw-bolder">Tap Tup</p>
+        <audio id="Tt" src="{% static 'audios/phonics/Tap and tub.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterUa()">
+        <p class=" display-3  fw-bolder">Uncle Umbrella</p>
+        <audio id="Uu" src="{% static 'audios/phonics/Uncle and umbrella.mp3' %}"></audio>
+      </div>
+      <div class="col bg-primary text-white   display-5 m-3" onclick="letterVa()">
+        <p class=" display-3  fw-bolder">Violet Violin</p>
+        <audio id="Vv" src="{% static 'audios/phonics/Violet and violin.mp3' %}"></audio>
+      </div>
+      <div class="col bg-info text-white   display-5 m-3" onclick="letterWa()">
+        <p class=" display-3  fw-bolder">Well Water</p>
+        <audio id="Ww" src="{% static 'audios/phonics/Well and water.mp3' %}"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterXa()">
+        <p class=" display-3  fw-bolder">FoX BoX</p>
+        <audio id="Xx" src="{% static 'audios/phonics/Fox and box.mp3' %}"></audio>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterYa()">
+        <p class=" display-3  fw-bolder">Yatch Yellow</p>
+        <audio id="Yy" src="audios/alphabets/Yatch and yellow.mp3"></audio>
+      </div>
+      <div class="col bg-danger text-white   display-5 m-3" onclick="letterZa()">
+        <p class=" display-3  fw-bolder">ZOO Zebra</p>
+        <audio id="Zz" src="{% static 'audios/phonics/zoo and zebra.mp3' %}"></audio>
       </div>
     </div>
 
+  </div>
 
-    <h4>DAYS OF THE WEEk</h4>
+  <h1 class="text-center p-5 display-3">DAYS OF THE WEEK </h1>
     <div class="row ma shadow p-3 mb-5 bg-body rounded">
         <div class="col-md-3 hoov shapes">
             <div onclick="playmond()">
@@ -259,6 +394,104 @@
             </div>
         </div>
     </div>
+
+    <!--month of the year  -->
+
+    <h1 class="text-center p-5 display-3">MONTH OF THE YEAR </h1>
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3 hoov shapes">
+            <div onclick="playjan()">
+            <img src="{% static 'images/month/jan.png' %}" class=" img-fluid">
+                <audio id="jan" src="{% static 'audios/month/january.mp3' %}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">January</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div onclick="playfeb()">
+                <img src="{% static 'images/month/feb.jpg'%}" class=" img-fluid">
+                <audio id="feb" src="{% static 'audios/month/february.mp3'%}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">February</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div onclick="playmarch()">
+                <img src="{% static 'images/month/march.png' %}" class=" img-fluid">
+                <audio id="march" src="{% static 'audios/month/March.mp3' %}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">March</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div onclick="playapril()">
+                <img src="{% static 'images/month/april.jpg'%}" class=" img-fluid">
+                <audio id="april" src="{% static 'audios/month/April_2.mp3'%}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">April</h2>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3 hoov shapes">
+            <div onclick="playmay()">
+            <img src="{% static 'images/month/may.png' %}" class=" img-fluid">
+                <audio id="may" src="{% static 'audios/month/May.mp3' %}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">May</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div onclick="playjune()">
+                <img src="{% static 'images/month/june.png'%}" class=" img-fluid">
+                <audio id="june" src="{% static 'audios/month/june.mp3'%}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">June</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div onclick="playjuly()">
+                <img src="{% static 'images/month/july.png' %}" class=" img-fluid">
+                <audio id="july" src="{% static 'audios/month/july.mp3' %}"></audio>
+                <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">July</h2>
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+          <div onclick="playaugust()">
+              <img src="{% static 'images/month/august.png' %}" class=" img-fluid">
+              <audio id="august" src="{% static 'audios/month/August_2.mp3' %}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">august</h2>
+          </div>
+      </div>
+    </div>
+
+    
+    <div class="row ma shadow p-3 mb-15 bg-body rounded">
+      <div class="col-md-3 hoov shapes">
+          <div onclick="playsep()">
+          <img src="{% static 'images/month/september.png' %}" class=" img-fluid">
+              <audio id="sep" src="{% static 'audios/month/September.mp3' %}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">September</h2>
+          </div>
+      </div>
+      <div class="col-md-3 shapes">
+          <div onclick="playoct()">
+              <img src="{% static 'images/month/october.png'%}" class=" img-fluid">
+              <audio id="oct" src="{% static 'audios/month/October.mp3'%}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">October</h2>
+          </div>
+      </div>
+      <div class="col-md-3 shapes">
+          <div onclick="playnov()">
+              <img src="{% static 'images/month/november.jpg' %}" class=" img-fluid">
+              <audio id="nov" src="{% static 'audios/month/November.mp3' %}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">November</h2>
+          </div>
+      </div>
+      <div class="col-md-3 shapes">
+        <div onclick="playdec()">
+            <img src="{% static 'images/month/december.png' %}" class=" img-fluid">
+            <audio id="dec" src="{% static 'audios/month/December.mp3' %}"></audio>
+            <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">December</h2>
+        </div>
+    </div>
+  </div>
 
   </div>
   
