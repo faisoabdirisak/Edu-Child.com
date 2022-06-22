@@ -6,7 +6,7 @@
     <div class="container-fluid numbers">
         <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
         <h1 class="text-center">ENVIRONMENT</h1>
-        <h1>Body Parts</h1>
+        <h1 class="fw-bolder">Body Parts</h1>
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
             <div class="col-md-3 hoov shapes">
                 <div onclick="playhead()">
@@ -167,7 +167,7 @@
         </div>
 
         <!-- earth -->
-        <h1>Earth and Continents</h1>
+        <h1 class="fw-bolder">Earth and Continents</h1>
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
             <div class="col-md-3 hoov shapes">
                 <div onclick="playearth()">
@@ -231,7 +231,7 @@
         </div>
 
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
-            <h1>Oceans</h1>
+            <h1 class="fw-bolder">Oceans</h1>
             <div class="col-md-3 hoov shapes">
                 <div onclick="playindian()">
                 <img src="{% static 'images/earth/indian.jpg' %}" class=" img-fluid">
@@ -296,7 +296,7 @@
         
         <!-- nutural -->
 
-        <h4>NATURAL</h4>
+        <h4 class="fw-bolder">NATURAL</h4>
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
             <div class="col-md-3 hoov shapes">
                 <div onclick="playsun()">
@@ -329,7 +329,7 @@
         </div>
         <!-- plants -->
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
-            <h4>PLANTS</h4>
+            <h4 class="fw-bolder">PLANTS</h4>
             <div class="col-md-3 shapes">
                 <div onclick="playleave()">
                     <img src="{% static 'images/environment images/leave tree.jpg'%}" class=" img-fluid">
@@ -361,7 +361,7 @@
         </div>
         <!-- water bodies -->
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
-            <h4>WATER BODIES</h4>
+            <h4 class="fw-bolder">WATER BODIES</h4>
             <div class="col-md-3 shapes">
                 <div onclick="playocean()">
                     <img src="{% static 'images/environment images/ocean water.jpg' %}" class=" img-fluid">
@@ -393,7 +393,7 @@
         </div>
         <!-- landscape -->
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
-            <h4>LANDSCAPE</h4>
+            <h4 class="fw-bolder">LANDSCAPE</h4>
             <div class="col-md-3 shapes">
                 <div onclick="playmount()">
                     <img src="{% static 'images/environment images/mountain.jpg'%}" class=" img-fluid">
@@ -422,7 +422,7 @@
         </div>
         <!-- Seasons -->
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
-            <h4>SEASONS OF THE YEAR</h4>
+            <h4 class="fw-bolder">SEASONS OF THE YEAR</h4>
             <div class="col-md-3 shapes">
                 <div onclick="playsummer()">
                     <img src="{% static 'images/seasons/summer.jpg'%}" class=" img-fluid" style="height:250px;">
@@ -482,7 +482,106 @@
             </div>
             </div>
         </div>
+
+        <!-- animals -->
+
+        <div class="container-fluid ma shadow p-3 mb-5 bg-body rounded">
+            <h1 class=" text-center display-2 fw-bolder">ANIMALS</h1>
+            <!-- <p class=" text-capitalize text-center display-6 fw-bold">Lets Learn about animals and their sounds they make!!<br> Know animals around You!!  </p> -->
+            <div class="row justify-content-between">
+    
+                <div class="wild  col-6">
+                    <!-- <h4 class=" text-center display-3 fw-bolder">Wild animals </h4> -->
+                        <!-- <p class=" text-center  fw-normal">Animals that live in forest</p> -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-md-6 p-2  m-2" onclick="simba()">
+                            <img id="lion" class="img-fluid" onclick="simba()" src="{% static 'images/Images/simba.png'%}" alt="#"><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name">Lion</h3>
+                            <audio id="Lion" src="{% static 'audios/animals/lion.mp3'%}"></audio>
+                        </div>
+                        <div class="col-md-6 p-2  m-2" onclick="cheetah()">
+                            <img id="cheetah" img class="img-fluid" src="{% static 'images/Images/Cheetah.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name1">Cheetah</h3>
+                            <audio id="Cheetah" src="{% static 'audios/animals/cheetah.mp3'%}"></audio>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="col-md-6 p-2  m-2" onclick="wolf()" >
+                            <img id="wolf" class="img-fluid" src="{% static 'images/Images/buffalo.jpg'%}" alt="" style="height: 280px; width: 430px;"><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name2">Buffalo</h3>
+                            <audio id="Wolf" src="{% static 'audios/animals/buffalo.mp3'%}"></audio>
+                        </div>
+                        <div class="col-md-6 p-2  m-2" onclick="fox()">
+                            <img id="fox" class="img-fluid" src="{% static 'images/Images/fox.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name3">Fox</h3>
+                            <audio id="Fox" src="{% static 'audios/animals/fox.mp3'%}"></audio>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <!-- <div class="col-md-6 p-2  m-2" onclick="elephant()">
+                            <img id="elephant" class="img-fluid" src="{% static 'images/Images/Elephant.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id=name4>Elephant</h3>
+                            <audio id="Elephant" src="{% static 'audios/animals/elephant.mp3'%}"></audio>
+    
+                        </div> -->
+                        <!-- <div class="col-md-6 p-2  m-2" onclick="zebra()">
+                            <img id="zebra" class="img-fluid" src="{% static 'images/Images/zebra.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name5">Zebra</h3>
+                            <audio id="Zebra" src="{% static 'audios/animals/zebra.mp3'%}"></audio>
+                        </div> -->
+                    </div>
+    
+                </div>
+                <div class="dosmetic  col-6">
+                    <!-- <h4 class=" text-center display-2 fw-bolder">Domestic animals </h4> -->
+                        <!-- <p class=" text-center f fw-normal">Animals that live in our homes</p> -->
+    
+                    <div class="d-flex justify-content-between">
+                        <div class="col-md-6 p-2  m-2" onclick="chicken()">
+                            <img id="kuku" class="img-fluid" src="{% static 'images/Images/kuku.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name6">Chicken</h3>
+                            <audio id="Chicken" src="{% static 'audios/animals/chicken.mp3'%}"></audio>
+                        </div>
+                        <div class="col-md-6 p-2  m-2" onclick="dog()">
+                            <img id="dog" class="img-fluid" src="{% static 'images/Images/dog.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name7">Dog</h3>
+                            <audio id="Dog" src="{% static 'audios/animals/dog.mp3'%}"></audio>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="col-md-6 p-2  m-2" onclick="cat()">
+                            <img id="cat" class="img-fluid" src="{% static 'images/Images/cat.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name8">Cat</h3>
+                            <audio id="Cat" src="{% static 'audios/animals/cat.mp3'%}"></audio>
+    
+    
+                        </div>
+                        <div class="col-md-6 p-2  m-2" onclick="cow()">
+                            <img id="cow" class="img-fluid" src="{% static 'images/Images/cow.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name9">Cow</h3>
+                            <audio id="Cow" src="{% static 'audios/animals/cow.mp3'%}"></audio>
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex justify-content-between">
+                        <div class="col-md-6 p-2  m-2" onclick="sheep()">
+                            <img id="sheep" class="img-fluid" src="{% static 'images/Images/sheep.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name10">Sheep</h3>
+                            <audio id="Sheep" src="{% static 'audios/animals/sheep.mp3'%}"></audio>
+    
+                        </div>
+                        <div class="col-md-6 p-2  m-2" onclick="horse()">
+                            <img id="horse" class="img-fluid" src="{% static 'images/Images/horse.png'%}" alt=""><br>
+                            <h3 class=" display-1 text-center" class=" display-1" id="name11">Horse</h3>
+                            <audio id="Horse" src="{% static 'audios/animals/horse.mp3'%}"></audio>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+    
+        </div>
+    
+    
        
     </div>
-    </div>
+    
     {% endblock %}
