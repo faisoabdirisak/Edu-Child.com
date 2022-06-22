@@ -1,0 +1,93 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+  <div>
+    
+    <div class="container-fluid numbers bg-light">
+      <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
+        <h1 class="text-center">Computers</h1>
+    <div class="container-fluid">
+      <h3 class="text-center mt-5">Computer parts</h3>
+      <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+        <div class=" col shapes faiso">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/mon.png' %}" onclick="mon()" alt="square">
+          <audio id="mon" src="{% static 'audios/comp/monitor_1.mp3'%}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Monitor</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/keyboard.png'%}" onclick="key()" alt="circle">
+          <audio id="key" src="{% static 'audios/comp/Keyboard.mp3'%}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Keyboard</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/mouse.png'%}" onclick="mouse()" alt="triangle">
+          <audio id="mouse" src="{% static 'audios/comp/mouse.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Mouse</h2>
+        </div>
+      </div>
+      <div class="row mt-5 me-1 shadow-sm p-3 mb-5 bg-body rounded">
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/cpu.png' %}" onclick="cpu()" alt="oval">
+          <audio id="cpu" src="{% static 'audios/comp/cpu.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">CPU</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/ups.png' %}" onclick="ups()"
+            alt="rectangle">
+          <audio id="ups" src="{% static 'audios/comp/ups.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">UPS</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/comp/speakers.png' %}" onclick="speak()" alt="heart">
+          <audio id="speak" src="{% static 'audios/comp/speakers.aac'%}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">SPEAKERS</h2>
+        </div>
+        <div class="row mt-5 shadow-sm p-3 mb-5 bg-body rounded">
+          <div class=" col shapes">
+
+            <img class="img-fluid" id="squareShape" src="{% static 'images/comp/printer.png' %}" onclick="printer()" alt="star">
+            <audio id="printer" src="{% static 'audios/comp/printer.mp3'%}"></audio>
+            <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">PRINTER</h2>
+          </div>
+          <div class=" col shapes">
+
+            <img class="img-fluid" id="squareShape" src="{% static 'images/comp/web.png'%}" onclick="web()" alt="pentagon">
+            <audio id="web" src="{% static 'audios/comp/web.mp3' %}"></audio>
+            <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">WEB CAMERA</h2>
+          </div>
+          <div class=" col shapes">
+
+            <img class="img-fluid" id="squareShape" src="{% static 'images/comp/head.png' %}" onclick="head()" alt="rhombus">
+            <audio id="head" src="{% static 'audios/comp/head.mp3' %}"></audio>
+            <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">HEADPHONE</h2>
+          </div>
+        </div>
+        <div class="row mt-5 shadow-sm p-3 mb-5 bg-body rounded">
+            <div class=" col shapes">
+  
+              <img class="img-fluid" id="squareShape" src="{% static 'images/comp/pendrive.png' %}" onclick="pen()" alt="star">
+              <audio id="pen" src="{% static 'audios/comp/pendrive.acc'%}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">PENDRIVE</h2>
+            </div>
+            <div class=" col shapes">
+  
+              <img class="img-fluid" id="squareShape" src="{% static 'images/comp/scanner.png'%}" onclick="scanner()" alt="pentagon">
+              <audio id="scanner" src="{% static 'audios/comp/scanner.mp3' %}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">SCANNER</h2>
+            </div>
+            <div class=" col shapes">
+  
+              <img class="img-fluid" id="squareShape" src="{% static 'images/comp/bor.png' %}" onclick="bor()" alt="rhombus">
+              <audio id="bor" src="{% static 'audios/comp/bor.mp3.aac' %}"></audio>
+              <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">MOTHERBOARD</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+  </div>
+ 
+  {% endblock %}

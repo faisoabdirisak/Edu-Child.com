@@ -3,7 +3,7 @@
 {% block content %}
 {% if page == 'register' %}
 <div class="full-screen-container">
-    <div class="login-container">
+    <div class="login-container card shadow p-3 mt-15 bg-body rounded">
        <!-- <i class="fas fa-chevron-left prev-btn"></i> -->
       <h3 class="login-title">Register User</h3>
       <form method="POST" action="{% url 'register' %}">
@@ -21,19 +21,18 @@
           <label>Password</label>
           <input type="password">
         </div> -->
-        <button type="submit" class="login-button">Sign In</button>
+        <button type="submit" class=" btn btn-primary login-button">Sign In</button>
       </form>
       <div class="auth__alternative">
         <p>Already have an Account?</p>
-        <a href="{% url 'login' %}">Log In</a>
+        <a class="btn btn-primary" href="{% url 'login' %}">Log In</a>
       </div>
     </div>
   </div>
   {% else %}
 
   <div class="full-screen-container">
-    <div class="login-container">
-      
+    <div class="login-container card shadow p-3 mb-5 bg-body rounded">
       <h3 class="login-title">Login User</h3>
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
@@ -45,12 +44,12 @@
           <label>Password</label>
           <input type="password" name="password" >
         </div>
-        <button type="submit" class="login-button">Sign In</button>
-        <a href="forgetpassword.html">Forget Password?</a>
+        <button type="submit" class=" btn btn-primary login-button">Sign In</button>
+        <a href="{% url 'reset_password' %}">Forget Password?</a>
       </form>
       <div class="auth__alternative">
         <p>Don’t have an Account?</p>
-        <a href="{% url 'register' %}">Sign Up</a>
+        <a class="btn btn-primary" href="{% url 'register' %}">Sign Up</a>
       </div>
     </div>
   </div>

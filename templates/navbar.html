@@ -14,9 +14,14 @@
 
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}">Home</a></li>
-              
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
                 {%  if request.user.is_authenticated %}
-                <!-- <li><a href="{% url 'profile' %}">Profile</a></li>  -->
+              
                 <li><a href="{% url 'account' %}">account</a></li> 
                 <li><a href="{% url 'logout' %}">logout</a></li> 
                 {% else%}
@@ -33,14 +38,14 @@
 
             <div class="searchBox">
                <div class="searchToggle">
-                <!-- <i class='bx bx-x cancel'></i>
-                <i class='bx bx-search search'></i> -->
-               </div>
+             <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div> 
 
-                <!-- <div class="search-field">
+                <div class="search-field">
                     <input type="text" placeholder="Search...">
                     <i class='bx bx-search'></i>
-                </div> -->
+                </div> 
             </div>
         </div>
     </div>
