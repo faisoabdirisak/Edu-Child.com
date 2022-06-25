@@ -85,6 +85,8 @@ nav .nav-bar .logo a{
     color: var(--text-color);
     text-decoration: none;
 }
+
+
 /* nav .nav-bar .logo img{
  height: 20px;
  width: 20px;
@@ -92,6 +94,7 @@ nav .nav-bar .logo a{
 
 .menu .logo-toggle{
     display: none;
+    
 }
 
 .nav-bar .nav-links{
@@ -99,11 +102,11 @@ nav .nav-bar .logo a{
     align-items: center;
 }
 
-.nav-bar .nav-links li{
-    margin: 0 5px;
-    list-style: none;
-}
-
+    .nav-bar .nav-links li{
+      margin: 0 5px;
+      list-style: none;
+  }
+  
 .nav-links li a{
     position: relative;
     font-size: 17px;

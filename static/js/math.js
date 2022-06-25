@@ -20,6 +20,10 @@ function letterE(){
   var my_sound = document.getElementById('E');
   my_sound.play();
 }
+function letterF(){
+  var my_sound = document.getElementById('F');
+   my_sound.play();
+}
 function letterM(){
   var my_sound = document.getElementById('M');
   my_sound.play();
