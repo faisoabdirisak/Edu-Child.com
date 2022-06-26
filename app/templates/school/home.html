@@ -292,7 +292,7 @@
                 <a href="#" class="fab fa-instagram"></a>
                 <a href="#" class="fab fa-linkedin"></a>
              </div>
-             <h3>Ahmed Ali</h3>
+             <h3>Ahmed Abdi</h3>
           </div>
  
           <div class="swiper-slide slides">
@@ -466,8 +466,47 @@
     <div class="row">
     <div class="col">
         <div class="image">
-            <img src="{% static 'images/contttt-removebg-preview.png' %}" alt="">
+         <form action="" method="">
+            {% csrf_token %}
+            <h5>Write Your Review</h5>
+   
+            <div>
+               <!-- Rating stars -->
+               <label>How do you rate this Website?</label>
+               <br>
+               <div class="rate">
+                  <input type="radio" name="rating" id="rating10" value="5" required /><label for="rating10" title="5"></label>
+                  <input type="radio" name="rating" id="rating9" value="4.5" required /><label for="rating9" title="4.5" class="half"></label>
+                  <input type="radio" name="rating" id="rating8" value="4" required /><label for="rating8" title="4"></label>
+                  <input type="radio" name="rating" id="rating7" value="3.5" required /><label for="rating7" title="3.5" class="half"></label>
+                  <input type="radio" name="rating" id="rating6" value="3" required /><label for="rating6" title="3"></label>
+                  <input type="radio" name="rating" id="rating5" value="2.5" required /><label for="rating5" title="2.5" class="half"></label>
+                  <input type="radio" name="rating" id="rating4" value="2" required /><label for="rating4" title="2"></label>
+                  <input type="radio" name="rating" id="rating3" value="1.5" required /><label for="rating3" title="1.5" class="half"></label>
+                  <input type="radio" name="rating" id="rating2" value="1" required /><label for="rating2" title="1"></label>
+                  <input type="radio" name="rating" id="rating1" value="0.5" required /><label for="rating1" title="0.5" class="half"></label>
+               </div>
+   <br>
+               Review:
+               <textarea name="review" rows="4" cols="20" class="form-control m-10"></textarea>
+               <br>
+               {% if user.is_authenticated %}
+                
+                     <input type="submit" value="Submit Review" class="btn btn-primary">
+                 
+   
+               {% else %}
+               <p>You must be logged in to post a review. <span><a href="{% url 'login' %}">Login now</a></span></p>
+               {% endif %}
+   
+            </div>
+   
+         </form>
         </div>
+
+        <div class="image">
+         <img src="{% static 'images/contttt-removebg-preview.png' %}" alt="" style="width:800px">
+     </div>
     </div>
     <div class="col">
         <div class="form-container">
@@ -504,7 +543,7 @@
         <div class="footer-content">
             <h3>Edu-Child.com</h3>
            <div>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Kakuma&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:100px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100px;width:600px;}</style></div></div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Kakuma&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:100px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100px;width:400px;}</style></div></div>
            </div>
         </div>
     
@@ -519,10 +558,10 @@
             <p>copyright &copy;2021  Edu-Child.com </p>
             <div class="footer-menu">
                 <ul class="f-menu">
-                   <li><a href="">Home</a></li>
-                   <li><a href="">About</a></li>
-                   <li><a href="">Contact</a></li>
-                   <li><a href="">Activity</a></li>
+                   <li><a href="home">Home</a></li>
+                   <li><a href="about">About</a></li>
+                   <li><a href="contact">Contact</a></li>
+                   <li><a href="activity">Activity</a></li>
                 </ul>
                </div>
          </div>

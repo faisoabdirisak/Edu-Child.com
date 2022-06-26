@@ -14,13 +14,12 @@
 
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#teachers">Teachers</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+              
+
                 
                 {%  if request.user.is_authenticated %}
+                <li><a href="/quizes/">Assignments</a></li>
+                <li><a href="/results/">Performance</a></li>
               
                 <li><a href="{% url 'account' %}">account</a></li> 
                 <li><a href="{% url 'logout' %}">logout</a></li> 
