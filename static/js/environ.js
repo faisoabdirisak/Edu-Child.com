@@ -264,7 +264,7 @@ function play() {
 
 // earth and continents
 
-function playsearth(){
+function playearth(){
   var earth=document.getElementById('earth');
   earth.play();
 }
@@ -326,7 +326,7 @@ function playantartic(){
   antartic.play();
 }
 
-function playartctic(){
+function playarctic(){
   var arctic=document.getElementById('arctic');
   arctic.play();
 }

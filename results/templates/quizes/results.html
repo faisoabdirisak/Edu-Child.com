@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'quizes/quiz.js' %}" defer></script> 
+{% endblock scripts %}
+
+{% block title %}
+{{obj.name}}
+{% endblock title %}
+
+{% block content %}
+<a class="btn btn-danger mt-5" href='/quizes/'>Back</a>
+{% for result in results %}
+
+<div class="row shadow p-3 mb-5 bg-body rounded">
+   
+    <div class="col">
+        <b>{{result.user}}</b>
+        <p>score : {{result.score}}%</p>
+    </div>
+    <div class="col text-right" id="timer-box"></div>
+</div>
+{% endfor %}
+
+{% endblock content %}
