@@ -3,7 +3,19 @@
 {% block content %}
 
 <div class="container-fluid numbers bg-light">
+
     <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div >
+        <a class="btn btn-dark mt-5" href='{% url "math" %}'>Math</a>
+        <a class="btn btn-dark mt-5" href='{% url "environment" %}'>Environment</a>
+        <a class="btn btn-dark mt-5" href='{% url "color" %}'>Color</a>
+        <a class="btn btn-dark mt-5" href='{% url "comp" %}'>Computer</a>
+        <a class="btn btn-dark mt-5" href='{% url "religion" %}'>Religion</a>
+      </div>
+    </div>
+   
+   
     <h1 class="text-center p-5 display-3">Alphabets </h1>
     <div class="row shadow p-3 mb-5 bg-body rounded">
       <div class="col bg-primary text-white   display-5 m-3" onclick="letterA()">
