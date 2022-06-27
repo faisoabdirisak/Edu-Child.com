@@ -1,0 +1,91 @@
+ .d-non{
+   display: none;
+   padding:15px;
+   border-radius: 40%;
+ }
+ 
+ .nums{
+    box-shadow: 2px 3px 4px 7px ;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: salmon;
+    color: white;
+ }
+ .nums p{
+   text-align: center;
+   padding: 1%;
+   border-radius: 10px;
+ }
+ .words{
+   padding:3%;
+   border-radius: 50%;
+ }
+.nums:nth-child(odd){
+    background-color:rgb(149, 194, 149);
+ }
+
+ .shapes img{
+   margin: auto;
+   width: 80%;
+ }
+ #myquare{
+   border-radius: 20px;
+   width: 90%;
+   margin: auto;
+   padding: 3%;
+   font-weight: 900;
+ }
+ .triangles{
+   width: 8vw;
+   height: 10vh;
+   background-color: hotpink;
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+ }
+ #plus{
+   position: relative;
+   bottom: -30%;
+   padding-top: 5%;
+   width: 5vw;
+   height: 10vh;
+   background-color: lightsalmon;
+   clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 64% 84%, 35% 84%, 35% 50%, 10% 50%);
+
+ }
+
+ #addResults{
+  clip-path: ellipse(50% 38% at 50% 50%);
+ }
+
+ #subResults{
+  clip-path: ellipse(50% 38% at 50% 50%);
+ }
+ .setA,.setB {
+   padding: 5%;
+   clip-path: ellipse(50% 38% at 50% 50%);
+   background-color: lightsalmon;
+ }
+ .sub{
+   width: 35%;
+  background-color: aqua;
+  padding: 5%;
+ }
+ #subtract{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  clip-path: inset(0% 0 10% 0);
+  background-color: aqua;
+  width: 5vw;
+  height: 3vh;
+  position: relative;
+  bottom: -45%;
+ }
+ /* .sum1,.sum2,.sum3,.sum4{
+  display: none;
+ } */
+ .sum{
+   display: none;
+ }
+ .sub{
+  display: none;
+}
