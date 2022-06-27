@@ -1,9 +1,9 @@
-
+/* 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 h1, h4, .col-md-3>p,h5{
     text-align: center;
     font-weight: bolder;
@@ -24,7 +24,7 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
 } */
 /* colors */
-.colors{
+ .colors{
     margin-top: 40px;
 }
 .myColor{
@@ -32,20 +32,17 @@ h1, h4, .col-md-3>p,h5{
     height: 20vh;
 }
 .myColor:hover{
-    transition: .6s ease-in-out;
-    transform: scale(1.2) ;
+    /* transition: .6s ease-in-out; */
+    /* transform: scale(1) ; */
 }
 
 
 
 .red{
-   
-    
     background-color:red;
-    
     border-radius: 20px;
-}
-/* .red:hover{
+} 
+.red:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -54,7 +51,7 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+} 
 .blue{
    
     
@@ -62,7 +59,7 @@ h1, h4, .col-md-3>p,h5{
     
     border-radius: 20px;
 }
-/* .blue:hover{
+.blue:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -71,7 +68,7 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .yellow{
    
     
@@ -79,7 +76,7 @@ h1, h4, .col-md-3>p,h5{
     
     border-radius: 20px;
 }
-/* .yellow:hover{
+.yellow:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -88,15 +85,14 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .green{
    
-    
     background-color:green;
     
     border-radius: 20px;
 }
-/* .green:hover{
+.green:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -105,15 +101,13 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .black{
-   
-    
     background-color:black;
     
     border-radius: 20px;
 }
-/* .black:hover{
+.black:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -122,7 +116,7 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .orange{
    
     
@@ -130,7 +124,7 @@ h1, h4, .col-md-3>p,h5{
     
     border-radius: 20px;
 }
-/* .orange:hover{
+.orange:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -139,7 +133,7 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .purple{
    
     
@@ -147,7 +141,7 @@ h1, h4, .col-md-3>p,h5{
     
     border-radius: 20px;
 }
-/* .purple:hover{
+.purple:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -156,15 +150,14 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
+}
 .pink{
-    /*
-     */
+   
     background-color:rgb(252, 70, 100);
-    /*  */
+   
     border-radius: 20px;
 }
-/* .pink:hover{
+.pink:hover{
     position:relative;
     top:-25px;
     left:-35px;
@@ -173,30 +166,64 @@ h1, h4, .col-md-3>p,h5{
     display:block;
     z-index:999;
     border-radius: 20px;
-} */
-
-
-/* footers */
-
-
-footer{
-    padding-top: 30px;
-    background-color:lightgray;
-    margin-top: 10px;
-    margin: 10px;
 }
-.icons i{
-    font-size: 60px;
-    padding-left: 40px;
-    padding-top: 50px;
-    margin-left: 60px;
+
+.hovv:hover{
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:400px;
+    height:300px;
+    display:block;
+    z-index:999;
+    border-radius: 20px;
 }
-phone{
-    margin: 20px;
-    padding-left:100px;
-  
+
+
+.gray{
+   
+    background-color:gray;
+    border-radius: 20px;
 }
-#email{
-margin-top: 20px;
-padding-left:100px;
+
+.indigo{
+   
+    background-color:indigo;
+    border-radius: 20px;
+}
+
+.brown{
+   
+    background-color:brown;
+    border-radius: 20px;
+}
+
+.gold{
+   
+    background-color:gold;
+    border-radius: 20px;
+}
+.white{
+   
+    background-color:white;
+    border: 2px black;
+    border-radius: 20px;
+}
+
+.violet{
+   
+    background-color:violet;
+    border-radius: 20px;
+}
+
+.silver{
+   
+    background-color:silver;
+    border-radius: 20px;
+}
+
+.light{
+   
+    background-color:lightblue;
+    border-radius: 20px;
 }

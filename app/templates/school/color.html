@@ -1,0 +1,141 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+   
+   
+<div class="container-fluid numbers ">
+    <h1 class="text-center">COLOR ARTS</h1><br>
+    <a class="btn btn-dark" href='{% url "home" %}'>Back</a>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div >
+          <a class="btn btn-dark mt-5" href='{% url "math" %}'>Math</a>
+          <a class="btn btn-dark mt-5" href='{% url "environment" %}'>Environment</a>
+          <a class="btn btn-dark mt-5" href='{% url "comp" %}'>Computer</a>
+          <a class="btn btn-dark mt-5" href='{% url "read" %}'>Read</a>
+          <a class="btn btn-dark mt-5" href='{% url "religion" %}'>Religion</a>
+        </div>
+      </div>
+   
+    <!-- colors -->
+    <div class="colors">
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <h4>COLORS</h4>
+            <p id="intro">Know the name of the colours by clicking</p>
+            <div class="col-md-3">
+                <div class="myColor red" onclick="play()"> <audio id="audio" src="{% static 'audios/audio/red.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor blue" onclick="play1()"><audio id="audio1" src="{% static 'audios/audio/blue.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor yellow" onclick="play2()"><audio id="audio2" src="{% static 'audios/audio/yellow.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor green" onclick="play3()"><audio id="audio3" src="{% static 'audios/audio/green.mp4' %}"></audio></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3">
+            <div class="myColor orange" onclick="play4()"><audio id="audio4" src="{% static 'audios/audio/orange.mp4'%}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor black" onclick="play5()"><audio id="audio5" src="{% static 'audios/audio/black.mp4' %}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor pink" onclick="play6()"><audio id="audio6" src="{% static 'audios/audio/pink.mp4' %}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor purple" onclick="play7()"><audio id="audio7" src="{% static 'audios/audio/purple.mp4' %}"></audio></div>
+        </div>
+
+    </div>
+
+    <div class="colors">
+        <div class="row ma shadow p-3 mb-5 bg-secondary rounded">
+            <div class="col-md-3">
+                <div class="myColor gray hovv" onclick="play8()"> <audio id="audio8" src="{% static 'audios/audio/gray.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor brown hovv" onclick="play9()"><audio id="audio9" src="{% static 'audios/audio/brown.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor gold hovv" onclick="play10()"><audio id="audio10" src="{% static 'audios/audio/gold.mp4'%}"></audio></div>
+            </div>
+            <div class="col-md-3">
+                <div class="myColor white hovv" onclick="play11()"><audio id="audio11" src="{% static 'audios/audio/white.mp4' %}"></audio></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3">
+            <div class="myColor indigo hovv" onclick="play12()"><audio id="audio12" src="{% static 'audios/audio/indigo.mp4'%}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor  violet hovv" onclick="play13()"><audio id="audio13" src="{% static 'audios/audio/violet.mp4' %}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor silver hovv" onclick="play14()"><audio id="audio14" src="{% static 'audios/audio/silver.mp4' %}"></audio></div>
+        </div>
+        <div class="col-md-3">
+            <div class="myColor light hovv" onclick="play15()"><audio id="audio15" src="{% static 'audios/audio/light-blue.mp4' %}"></audio></div>
+        </div>
+
+    </div>
+
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3 hoov shapes">
+            <div>
+            <img src="{% static 'images/environment images/1.jpeg' %}" class="hovv img-fluid">
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/2.jpeg'%}" class="hovv img-fluid">
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/3.jpeg' %}" class="hovv img-fluid">
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/4.jpeg'%}" class="hovv img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="row ma shadow p-3 mb-5 bg-body rounded">
+        <div class="col-md-3 hoov shapes">
+            <div>
+            <img src="{% static 'images/environment images/5.jpeg' %}" class="hovv img-fluid">
+             
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/6.jpeg'%}" class="hovv img-fluid">
+               
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/7.jpeg' %}" class="hovv img-fluid">
+               
+            </div>
+        </div>
+        <div class="col-md-3 shapes">
+            <div>
+                <img src="{% static 'images/environment images/8.jpeg'%}" class="hovv img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    {% endblock %}

@@ -1,29 +1,29 @@
-{% extends 'main.html' %}
+<!-- {% extends 'main.html' %} -->
 {% load static %}
 {% block content %}
 <div class="full-screen-container">
-    <div class="faisoo">
-       <!-- <i class="fas fa-chevron-left prev-btn"></i> -->
-       <a class="backButton" href="{% url 'account' %}"><i class="fas fa-chevron-left prev-btn"></i></a>
-      <h3 class="login-title">Edit Your Details </h3>
-      
-      <form method="POST" action="{% url 'edit-account' %}" enctype="multipart/form-data">
-        {% csrf_token %}
-        {% for field in form %}
-        <div class="input-group">
-          <label>{{field.label}}</label>
-          {{field}}
-        </div>
-        {% endfor %}
-        <div>
-         
-        </div>
-        <!-- <div class="input-group">
-          <label>Password</label>
-          <input type="password">
-        </div> -->
-        <button type="submit" class="login-button">submit</button>
-      </form>
+  <div class="faisoo">
+    <a class="btn btn-dark" href="{% url 'account' %}"><i class=""></i>Back</a>
+<div class="col d-flex justify-content-center">
+    
+  <div class="">
+    <!-- <a class="btn btn-dark" href="{% url 'account' %}"><i class="fas fa-chevron-left prev-btn"></i></a> -->
+  <h3 class="login-title">Edit Your Details </h3>
+ 
+  <form method="POST" action="{% url 'edit-account' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="input-group">
+      <label>{{field.label}}</label>
+      {{field}}
     </div>
+    {% endfor %}
+    <button type="submit" class=" btn btn-dark login-button">submit</button>
+  </form>
 </div>
+</div>
+</div>
+</div>
+
+
 {% endblock content %}

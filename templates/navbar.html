@@ -8,15 +8,19 @@
 
         <div class="menu">
             <div class="logo-toggle">
-                <span class="logo"><a href="{% url 'home' %}"><span id="school">School</span><span id="child">Child</span>.com</a></span></span>
+                <span class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/log.png' %}"/></a></span></span>
                 <i class='bx bx-x siderbarClose'></i>
             </div>
 
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}">Home</a></li>
               
+
+                
                 {%  if request.user.is_authenticated %}
-                <!-- <li><a href="{% url 'profile' %}">Profile</a></li>  -->
+                <li><a href="/quizes/">Assignments</a></li>
+                <li><a href="/results/">Performance</a></li>
+              
                 <li><a href="{% url 'account' %}">account</a></li> 
                 <li><a href="{% url 'logout' %}">logout</a></li> 
                 {% else%}
@@ -33,14 +37,14 @@
 
             <div class="searchBox">
                <div class="searchToggle">
-                <!-- <i class='bx bx-x cancel'></i>
-                <i class='bx bx-search search'></i> -->
-               </div>
+             <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div> 
 
-                <!-- <div class="search-field">
+                <div class="search-field">
                     <input type="text" placeholder="Search...">
                     <i class='bx bx-search'></i>
-                </div> -->
+                </div> 
             </div>
         </div>
     </div>
