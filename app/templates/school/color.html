@@ -5,8 +5,17 @@
    
    
 <div class="container-fluid numbers ">
-    <h1 class="text-center">COLOR ARTS</h1>
+    <h1 class="text-center">COLOR ARTS</h1><br>
     <a class="btn btn-dark" href='{% url "home" %}'>Back</a>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div >
+          <a class="btn btn-dark mt-5" href='{% url "math" %}'>Math</a>
+          <a class="btn btn-dark mt-5" href='{% url "environment" %}'>Environment</a>
+          <a class="btn btn-dark mt-5" href='{% url "comp" %}'>Computer</a>
+          <a class="btn btn-dark mt-5" href='{% url "read" %}'>Read</a>
+          <a class="btn btn-dark mt-5" href='{% url "religion" %}'>Religion</a>
+        </div>
+      </div>
    
     <!-- colors -->
     <div class="colors">
