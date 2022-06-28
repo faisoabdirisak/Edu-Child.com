@@ -19,6 +19,11 @@ DEBUG = False
 ALLOWED_HOSTS = ['edu-child.azurewebsites.net']
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://edu-child.azurewebsites.net'
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
