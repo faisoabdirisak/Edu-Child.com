@@ -34,6 +34,7 @@
   <div class="full-screen-container">
     <div class="login-container card shadow p-3 mb-5 bg-body rounded">
       <h3 class="login-title">Login User</h3>
+      {% include 'alert.html' %}
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
         <div class="input-group">

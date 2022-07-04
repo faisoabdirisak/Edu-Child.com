@@ -14,9 +14,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=s8#hze52)sw&a^9t_r5k$le_yxipy3m5s(j-ao19(1p(a2g)_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['edu-child.azurewebsites.net']
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://edu-child.azurewebsites.net'
+]
 
 
 # Application definition
@@ -39,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -75,8 +81,13 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'edudatabase',
+        'USER': 'faiso@edudatabase',
+        'PASSWORD': 'Faska1234',
+        'HOST': 'edudatabase.postgres.database.azure.com',
+        'PORT': '5432',
+        'OPTIONS':{'sslmode':'require'},
     }
 }
 

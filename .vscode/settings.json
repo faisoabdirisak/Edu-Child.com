@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9d3c226b-0b7d-4143-97df-76d3d9fec98b/microsoft.web/sites/subscriptions/9d3c226b-0b7d-4143-97df-76d3d9fec98b/resourceGroups/Edu-child/providers/Microsoft.Web/sites/Edu-child",
+    "appService.deploySubpath": "."
+}
