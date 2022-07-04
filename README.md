@@ -7,7 +7,7 @@
 EDU-CHILD is a modern, super-fast, and dynamic web application developed by ITALANTA ACADEMY scholars. The main purpose behind the development of this web application is to provide easy access to limited educational resources. Therefore, EDU-CHILD seeks to fight and eliminate high illiteracy and poor quality of education.
 
 ##  Live Link
- Click [View Site]()  to visit the site.
+ Click [View Site](https://edu-child.azurewebsites.net/app/)  to visit the site.
 
   ## Screenshots
 
