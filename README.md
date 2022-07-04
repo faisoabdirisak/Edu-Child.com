@@ -15,18 +15,18 @@ EDU-CHILD is a modern, super-fast, and dynamic web application developed by ITAL
 
 ## User Story  
 # Clients:
-* Parents should be able to register their children
-* Able to access resources and materials
-* Able to view different categories of resources
-* Can contact the admin through email
-* Give feedback by writing a review and rating stars
+* Able to login,sign up, reset password and receive Welcome Email.
+* Able to edit his/her profile.
+* Able to view activities, listen to audios of the resources.
+* Do Assignments and Gets immediate result
+
 
 # Admin:
-* Able to create clients
-* Able to add, edit and delete resources
-* Able to add categories
-* Able to view parents' reviews
-* Able t receive parents emails
+* Can add, edit, remove activities, categories of the activities.
+* Can add, edit, remove expert teachers
+* Can add, edit Questions and answers
+* Can view user results
+
 
 
 
